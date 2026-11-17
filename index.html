@@ -17,57 +17,100 @@
 </style>
 </head>
 <body>
-  <p class="lang-switch"><a href="./en.html">English version →</a></p>
+  <div class="lang-switch"><a href="en.html">English version →</a></div>
   <h1>Informativa sulla privacy di FinanzAI</h1>
-  <p class="updated">Ultimo aggiornamento: 25 agosto 2026</p>
+  <p class="updated">Ultimo aggiornamento: 17 novembre 2026 (versione 1.1.0 dell'app)</p>
 
-  <p>FinanzAI ("l'App") è un'applicazione per la gestione delle finanze personali. Questa informativa spiega quali dati vengono trattati e come, in conformità al Regolamento (UE) 2016/679 (GDPR) e alle linee guida di Google Play sulla protezione dei dati.</p>
+  <p>FinanzAI ("l'App") è un'applicazione per la gestione delle finanze personali, disponibile per Android e come
+  web app (anche su iPhone). Questa informativa spiega quali dati vengono trattati e come, in conformità al
+  Regolamento (UE) 2016/679 (GDPR) e alle norme di Google Play sulla sicurezza dei dati.</p>
 
   <h2>1. Titolare del trattamento</h2>
-  <p>Il titolare del trattamento è lo sviluppatore di FinanzAI. Per qualsiasi richiesta relativa alla privacy è possibile scrivere a: <strong>marco.p.develop@gmail.com</strong> (indirizzo dedicato — vedi nota in fondo alla pagina).</p>
+  <p>Il titolare del trattamento è lo sviluppatore di FinanzAI. Per qualsiasi richiesta relativa alla privacy:
+  <strong>marco.p.develop@gmail.com</strong>.</p>
 
-  <h2>2. Dati trattati e dove vengono salvati</h2>
-  <p><strong>Tutti i dati finanziari che inserisci nell'App — transazioni, importi, categorie, note, budget, obiettivi di risparmio e preferenze — vengono salvati esclusivamente in locale, sulla memoria del tuo dispositivo</strong> (tramite lo storage del browser integrato nell'app, "localStorage"). Questi dati:</p>
+  <h2>2. Uso senza account: dati solo sul dispositivo</h2>
+  <p>L'App funziona anche senza account. In questo caso movimenti, budget, obiettivi, categorie, carte fedeltà e
+  preferenze restano <strong>solo sul tuo dispositivo</strong> e non vengono inviati allo sviluppatore.</p>
+
+  <h2>3. Account facoltativo e sincronizzazione</h2>
+  <p>Se crei un account (facoltativo) vengono trattati:</p>
   <ul>
-    <li>non vengono mai inviati a server esterni, né dello sviluppatore né di terze parti;</li>
-    <li>non vengono sincronizzati automaticamente nel cloud;</li>
-    <li>restano accessibili solo dal tuo dispositivo, finché non li elimini o disinstalli l'app.</li>
+    <li><strong>email e password</strong> (la password è salvata solo in forma cifrata) per l'accesso;</li>
+    <li>il <strong>nome visibile</strong> che scegli, mostrato agli altri membri dei tuoi wallet;</li>
+    <li>i tuoi <strong>dati finanziari personali</strong> (movimenti, budget, obiettivi, categorie, carte fedeltà
+      personali) e le <strong>preferenze</strong> (tema, valuta, notifiche, orario e fuso orario dei promemoria),
+      per sincronizzarli tra i tuoi dispositivi;</li>
+    <li>un <strong>codice di recupero</strong> della password, salvato solo come impronta cifrata (non leggibile).</li>
+  </ul>
+  <p>I dati sono conservati su <strong>Supabase</strong> (server nell'Unione Europea, Irlanda), fornitore che agisce
+  come responsabile del trattamento. La connessione è sempre cifrata (HTTPS) e regole di accesso per riga
+  garantiscono che ogni utente veda solo i propri dati.</p>
+
+  <h2>4. Wallet condivisi e carte fedeltà condivise</h2>
+  <p>Se crei un wallet o vi entri con un codice invito, le spese del wallet (descrizione, importo, data, chi ha
+  pagato e la suddivisione) e le carte fedeltà che decidi di condividere (negozio e numero della carta) sono visibili a
+  <strong>tutti i membri di quel wallet</strong>, insieme al tuo nome visibile. Puoi uscire da un wallet in qualsiasi
+  momento; le spese già registrate restano visibili agli altri membri.</p>
+
+  <h2>5. Notifiche</h2>
+  <p>Le notifiche sono facoltative e vengono attivate solo dopo una tua scelta esplicita. Su Android sono generate sul
+  dispositivo. Sul web/iPhone, se le attivi con un account, viene salvato un identificativo tecnico di iscrizione
+  (Web Push) per poterti inviare promemoria e avvisi sulle spese dei tuoi wallet.</p>
+
+  <h2>6. Statistiche di utilizzo ed errori (diagnostica)</h2>
+  <p>Per migliorare l'App e correggere i problemi, l'App invia allo sviluppatore informazioni tecniche:</p>
+  <ul>
+    <li>il <strong>tipo di azione</strong> compiuta (es. "accesso", "spesa aggiunta", "wallet creato"),
+      <strong>senza alcun contenuto</strong>: mai importi, descrizioni, nomi di spese o negozi, numeri di carte,
+      codici invito o email digitate;</li>
+    <li>i <strong>messaggi di errore</strong> tecnici dell'App;</li>
+    <li>piattaforma (Android, iPhone, web), versione dell'App e un <strong>identificativo casuale
+      dell'installazione</strong> (generato dall'App, non legato all'hardware né alla pubblicità);</li>
+    <li>se hai un account, il tuo nome visibile, per collegare gli errori all'utente che li incontra.</li>
+  </ul>
+  <p>Questi dati sono conservati per un massimo di 90 giorni (gli errori non ancora risolti fino alla loro
+  soluzione) e sono usati solo dallo sviluppatore per analisi e assistenza. Non vengono venduti né condivisi.</p>
+
+  <h2>7. Cosa NON fa l'App</h2>
+  <ul>
+    <li>niente pubblicità, né SDK pubblicitari o di profilazione;</li>
+    <li>nessun ID pubblicitario;</li>
+    <li>nessuna vendita o cessione dei dati a terzi;</li>
+    <li>la funzione di suggerimenti e statistiche funziona interamente sul dispositivo, senza servizi di
+      intelligenza artificiale esterni.</li>
   </ul>
 
-  <h2>3. Backup manuale</h2>
-  <p>L'App offre una funzione di <strong>esportazione manuale</strong> dei dati in un file JSON (backup) o CSV, che l'utente può salvare o condividere autonomamente tramite le funzioni del proprio dispositivo (es. app Files, email, servizi cloud di terze parti scelti liberamente dall'utente). Lo sviluppatore non ha accesso a questi file: la loro gestione e condivisione è interamente sotto il controllo dell'utente. L'App non integra alcun servizio di backup automatico su cloud (es. Google Drive): l'eventuale caricamento del file di backup su un servizio cloud è un'azione manuale e volontaria dell'utente, effettuata al di fuori dell'App.</p>
+  <h2>8. Fotocamera</h2>
+  <p>La fotocamera viene usata solo quando scegli di scansionare il codice di una carta fedeltà. Le immagini non
+  vengono salvate né inviate: viene letto solo il numero del codice.</p>
 
-  <h2>4. Dati raccolti dallo sviluppatore</h2>
-  <p>Lo sviluppatore <strong>non raccoglie, non riceve e non ha accesso</strong> ad alcun dato personale o finanziario inserito nell'App. Non sono presenti:</p>
+  <h2>9. Backup manuale</h2>
+  <p>Puoi esportare i tuoi dati in un file JSON o CSV. Il file resta sotto il tuo controllo: lo sviluppatore non vi
+  ha accesso.</p>
+
+  <h2>10. Conservazione e cancellazione</h2>
   <ul>
-    <li>account utente o sistemi di login;</li>
-    <li>strumenti di analisi/tracciamento (analytics) che inviano dati a server esterni;</li>
-    <li>pubblicità di terze parti;</li>
-    <li>SDK pubblicitari o di profilazione.</li>
+    <li>Senza account: i dati restano sul dispositivo finché non li elimini ("Cancella tutti i dati") o disinstalli l'App.</li>
+    <li>Con account: puoi eliminare l'account in qualsiasi momento da <strong>Impostazioni → Account → Elimina
+      account</strong>. Vengono cancellati subito account, dati personali sincronizzati, preferenze e iscrizioni alle
+      notifiche, e vieni rimosso da tutti i wallet (i wallet senza altri membri vengono eliminati).</li>
   </ul>
 
-  <h2>5. Permessi del dispositivo</h2>
-  <p>L'App può richiedere accesso allo storage del dispositivo esclusivamente per consentire il salvataggio/lettura del file di backup quando l'utente sceglie di esportare o importare i propri dati. Nessun permesso viene usato per finalità diverse da quella dichiarata.</p>
+  <h2>11. Diritti dell'utente</h2>
+  <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Molti di questi
+  diritti li eserciti direttamente dall'App (esportazione, modifica, eliminazione dell'account); per tutto il resto
+  scrivi all'indirizzo indicato sopra. Puoi inoltre proporre reclamo al Garante per la protezione dei dati
+  personali.</p>
 
-  <h2>6. Funzione "suggerimenti automatici"</h2>
-  <p>L'App include una funzione di suggerimento categoria e alcuni insight statistici basati su semplici regole ed elaborazioni matematiche eseguite interamente sul dispositivo. Questa funzione non utilizza servizi di intelligenza artificiale esterni e non trasmette alcun dato a server remoti.</p>
+  <h2>12. Minori</h2>
+  <p>L'App non è rivolta a minori di 18 anni e non raccoglie consapevolmente dati di minori.</p>
 
-  <h2>7. Conservazione e cancellazione dei dati</h2>
-  <p>I dati restano sul dispositivo fino a quando l'utente li elimina manualmente dall'App (funzione "Cancella tutti i dati") o disinstalla l'applicazione, che comporta la rimozione automatica di tutti i dati locali associati.</p>
+  <h2>13. Modifiche</h2>
+  <p>Questa informativa può essere aggiornata in caso di nuove funzionalità. La versione aggiornata è sempre
+  disponibile a questo indirizzo, con la data dell'ultimo aggiornamento.</p>
 
-  <h2>8. Diritti dell'utente</h2>
-  <p>Poiché i dati sono conservati esclusivamente sul dispositivo dell'utente, l'utente ha il pieno controllo diretto su di essi: può consultarli, modificarli, esportarli o cancellarli in qualsiasi momento tramite le funzioni dell'App, senza necessità di richiederlo allo sviluppatore.</p>
-
-  <h2>9. Minori</h2>
-  <p>L'App non è rivolta specificamente a minori di 13 anni e non raccoglie consapevolmente dati di minori, in quanto non raccoglie alcun dato personale in primo luogo.</p>
-
-  <h2>10. Modifiche a questa informativa</h2>
-  <p>Questa informativa può essere aggiornata in futuro, ad esempio in caso di aggiunta di nuove funzionalità che coinvolgano il trattamento dei dati. La versione aggiornata sarà sempre disponibile a questo stesso indirizzo, con indicata la data dell'ultimo aggiornamento.</p>
-
-  <h2>11. Contatti</h2>
+  <h2>14. Contatti</h2>
   <p>Per domande su questa informativa: <strong>marco.p.develop@gmail.com</strong></p>
-
-  <hr style="margin-top:48px;opacity:.2">
-  <p style="font-size:12px;color:#6b7f96">Nota: questo indirizzo è usato esclusivamente per richieste relative a questa app.</p>
 </body>
 </html>
